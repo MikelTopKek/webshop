@@ -1,0 +1,3 @@
+celeryd.pid
+celerybeat-schedule
+celerybeat.pid
