@@ -1,13 +1,13 @@
 current_dir = $(shell pwd)
 
-start_backend_local:
-	docker-compose -f docker-compose-local.yml up -d;
+start_local:
+	docker-compose -f docker-compose.yml up -d;
 
-stop_backend_local:
-	docker-compose -f docker-compose-local.yml stop;
+stop_local:
+	docker-compose -f docker-compose.yml stop;
 
 build_local:
-	docker-compose -f docker-compose-local.yml build;
+	docker-compose -f docker-compose.yml build;
 
 down_local:
-	docker-compose -f docker-compose-local.yml down;
+	docker-compose -f docker-compose.yml down;
