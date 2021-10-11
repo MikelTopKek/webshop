@@ -17,6 +17,9 @@ services:
 
   web:
     build: .
+    environment:
+      - environment_type=local
+      - PYTHONUNBUFFERED=1
     command: >
       bash -c "python manage.py makemigrations
       && python manage.py migrate
